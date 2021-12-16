@@ -1,6 +1,6 @@
 FactoryBot.define do
   
-  factory :products do
+  factory :product do
 
     brand_id { rand 1..5 }
     title { Faker::Lorem.word }
