@@ -1,15 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>WatchShop</title>
+    <!-- <title>WatchShop</title> -->
+    <%= display_meta_tags title: @page_title, description: @page_description, deywords: @page_keyword %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'bootstrap', media: 'all' %>
+    <%= stylesheet_link_tag 'flexslider', media: 'all' %>
+    <%= stylesheet_link_tag 'memenu', media: 'all' %>
+    <%= stylesheet_link_tag 'style', media: 'all' %>
+    <%= stylesheet_link_tag 'mystyle', media: 'all' %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+<!--     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html charset=utf-8" />
   </head>
 
   <body>
-    <%= yield %>
+    
+    <div class="content">
+      <%= yield %>
+    </div>
+    <script src=" <%= asset_path 'application' %>"></script>
+
   </body>
 </html>
