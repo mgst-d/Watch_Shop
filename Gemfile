@@ -33,6 +33,12 @@ gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'mast
 
 gem 'meta-tags'
 gem 'breadcrumbs_on_rails'
+gem 'uglifier'
+gem 'oj_mimic_json'
+gem 'oj'
+gem 'jquery-rails'
+gem 'coffee-rails'
+gem 'bootstrap-sass'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
